@@ -15,7 +15,7 @@ The protocol allows to establish a connection via Bitcoin. The connection can th
 
 
 ## Write to Bitcoin
-There are two ways of writing into bitcoin, via `OP_RETURN` or `OP_PUSHDATA`
+There are two ways of writing into bitcoin, using `OP_RETURN` or `OP_PUSHDATA`
 
 ## Read from Bitcoin
 You can receive & read messages by filtering the blockchain for MSGP transactions or subscribe to a filter service.
