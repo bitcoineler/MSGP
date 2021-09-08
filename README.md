@@ -11,8 +11,10 @@ A simple messaging protocol to send messages to bitcoin users (unicast | multica
 The protocol allows to establish a connection via Bitcoin. The connection can then be made via Bitcoin or P2P.
 
 ## Protocol
-
-
+Prefix: `0x6d736770`  (MSGP)
+Type: `0x00000001`
+Channel-ID: `e481259cdfa4ed647fdc446ffc8f848993543092bf46570fb984f56d7d1f4021` (SHA256(pubkey))
+Data: `[senderPubkey][senderSig][sequenceNumber][protocolData]`
 
 ## Write to Bitcoin
 There are two ways of writing into bitcoin, using `OP_RETURN` or `OP_PUSHDATA`
