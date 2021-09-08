@@ -12,8 +12,11 @@ The protocol allows to establish a connection via Bitcoin. The connection can th
 
 ## Protocol
 Prefix: `0x6d736770`  (MSGP)
+
 Type: `0x00000001`
+
 Channel-ID: `e481259cdfa4ed647fdc446ffc8f848993543092bf46570fb984f56d7d1f4021` (SHA256(pubkey))
+
 Data: `[senderPubkey][senderSig][sequenceNumber][protocolData]`
 
 ## Write to Bitcoin
