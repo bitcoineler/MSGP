@@ -24,6 +24,12 @@ The protocol allows to establish a connection via Bitcoin. The connection can th
 ### Prefix
 Prefix (4Bytes): `0x6d736770`  (ASCII:'MSGP')
 
+### Channel-ID
+A 42Byte Channel identifier e.g SHA256-Hash(pubkey) or a broadcast address
+
+### Data
+further protocol data + encapsulated protocols. Encrypted or unencrypted (message types)
+
 ### Types
 Type is a 4 Byte field.
 
@@ -35,7 +41,7 @@ Type is a 4 Byte field.
 #### Type 0x00000001 Message
 Unicast/Multicast encrypted
 
-Type (4Bytes): `0x00000001` | `0x00000002`
+Type (4Bytes): `0x00000001`
 
 Channel-ID (32Bytes): `e481259cdfa4ed647fdc446ffc8f848993543092bf46570fb984f56d7d1f4021`
 
@@ -49,12 +55,6 @@ Type (4Bytes): `0x00000002`
 Channel-ID (32Bytes): `ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff`
 
 Data: `[senderPubkey][senderSig][sequenceNumber][protocolData]`
-
-### Channel-ID
-Channel identifier e.g SHA256-Hash(pubkey) or a broadcast address
-
-### Data
-further protocol data + encapsulated protocols. Encrypted or unencrypted (message types)
 
 ### Example
 `6d736770` `00000001` `e481259cdfa4ed647fdc446ffc8f848993543092bf46570fb984f56d7d1f4021` `42494531023b7c441578c792d10f4b55ae1b509073a78cdf620b2d77a35e0ae4fa167708e91cb683a65cc03aaa315f9e8020c161e8e90f2e572db1ad3e534139ac667ec1faf76678662c15551e0b4d273e0f9ea2e037f3a0b6506bec746dc12e01b71ac9f4dc66888716667fe9c92c7ba43e71e93586a435dcae2c01e1d135ffa0794f69fbcf2adf983e6adaf240d5fb490057ce3a8f204fceaabe62c49740b8755dbc47b3dbbc21890c7e015135b6c77208d1f58556f1bfabeafc5f11d8f7d15440d056881be2ac1f78ccd1877b4e326a3a5214226f3f903d69bc136425ccfd17e32be7bd`
