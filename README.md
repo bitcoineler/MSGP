@@ -30,14 +30,18 @@ A 42Byte Channel identifier e.g SHA256-Hash(pubkey) or a broadcast address
 ### Data
 further protocol data + encapsulated protocols. Encrypted or unencrypted (message types)
 
-`<senderPubkey>` `<senderSig>` `<sequenceNumber>` `<encapsulatedProtocolData>`
+`<senderPubkey>` `<sigHashFlag>` `<senderSig>` `<sequenceNumber>` `<encapsulatedProtocolData>`
 
 | field                   | size    | function                                                |
 | ----------------------- | -------- | ------------------------------------------------------- |
 | `senderPubkey`               | 33 Bytes   | sender Publickey       |
+| `sigHashFlag`               | 1 Bytes   | sigHash Flag (https://wiki.bitcoinsv.io/index.php/SIGHASH_flags)      |
 | `senderSig`                  | 70 Bytes   | sender Signature        |
 | `sequenceNumber`             | 4 Bytes  | sequencenumber   |
 | `encapsulatedProtocolData`   | n Bytes   | protocoldata        |
+
+#### SenderSig
+Use sigHashFlag, include at least one Input in the signed preimage to prevent message replay.
 
 ### Types
 Type is a 4 Byte field.
