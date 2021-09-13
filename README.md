@@ -95,5 +95,5 @@ Confirmed MSGP Transactions
 Unconfirmed MSGP Transactions
 `https://bitmsg.de/v1/msgp/u/<channelId>`
 
-MSGP Transactions Eventstream"
+MSGP Transactions Eventstream
 `https://bitmsg.de/v1/msgp/s/<channelId>`
