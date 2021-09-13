@@ -86,4 +86,14 @@ There are two ways of writing into bitcoin, using `OP_RETURN` or `OP_PUSHDATA`
 You can receive & read messages by filtering the blockchain for MSGP transactions or subscribe to a filter service.
 
 ### Filter
-pending...
+MSGP Transaction by TxId
+`https://bitmsg.de/v1/msgp/tx/<txid>`
+
+Confirmed MSGP Transactions
+`https://bitmsg.de/v1/msgp/c/<channelId>`
+
+Unconfirmed MSGP Transactions
+`https://bitmsg.de/v1/msgp/u/<channelId>`
+
+MSGP Transactions Eventstream"
+`https://bitmsg.de/v1/msgp/<channelId>`
