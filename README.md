@@ -25,7 +25,7 @@ The protocol is sued to establish a connection via Bitcoin. The connection can t
 Prefix (4Bytes): `0x6d736770`  (ASCII:'MSGP')
 
 ### Channel-ID
-A 42Byte Channel identifier e.g SHA256-Hash(pubkey) or a broadcast address
+A 32Byte Channel identifier e.g SHA256-Hash(pubkey) or a broadcast address
 
 ### Data
 further protocol data + encapsulated protocols. Encrypted or unencrypted (message types)
