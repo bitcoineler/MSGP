@@ -88,12 +88,16 @@ You can receive & read messages by filtering the blockchain for MSGP transaction
 ### Filter
 MSGP Transaction by TxId
 `https://bitmsg.de/v1/msgp/tx/<txid>`
+Example: https://bitmsg.de/v1/msgp/tx/a88b313e8a72dafb8bc528cb6c8936511e39fff34849b75a3b3e64cd8443bf10
 
 Confirmed MSGP Transactions
 `https://bitmsg.de/v1/msgp/c/<channelId>`
+Example: https://bitmsg.de/v1/msgp/c/e481259cdfa4ed647fdc446ffc8f848993543092bf46570fb984f56d7d1f4021
 
 Unconfirmed MSGP Transactions
 `https://bitmsg.de/v1/msgp/u/<channelId>`
+Example: https://bitmsg.de/v1/msgp/u/e481259cdfa4ed647fdc446ffc8f848993543092bf46570fb984f56d7d1f4021
 
 MSGP Transactions Eventstream
 `https://bitmsg.de/v1/msgp/s/<channelId>`
+Example: https://bitmsg.de/v1/msgp/s/a88b313e8a72dafb8bc528cb6c8936511e39fff34849b75a3b3e64cd8443bf10
