@@ -8,7 +8,7 @@ Bitcoin Messaging Protocol
 
 ## Overview
 A simple messaging protocol to send messages to bitcoin users (unicast | multicast | broadcast).
-The protocol is sued to establish a connection via Bitcoin. The connection can then be made via Bitcoin or P2P.
+The protocol is used to establish a connection via Bitcoin. The connection can then be made via Bitcoin or P2P.
 
 ## Protocol
 `6d736770` `<type>` `<channel-id>` `<data>`
