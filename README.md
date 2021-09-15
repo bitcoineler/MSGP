@@ -11,7 +11,7 @@ A simple messaging protocol to send messages to bitcoin users (unicast | multica
 The protocol is used to establish a connection via Bitcoin. Further data exchange can then be made via Bitcoin or P2P.
 
 ## Usecases
-* Exchange connection information via bitcoin to establish a P2P connection (VoIP Calls, sharing Files, etc.)
+* negotigate connection information via bitcoin to establish a P2P connection (VoIP Calls, sharing Files, etc.)
 * encapsulate other protocols into MSGP (Chat, Filesharing, etc.)
 
 ## Protocol
