@@ -10,6 +10,10 @@ Bitcoin Messaging Protocol
 A simple messaging protocol to send messages to bitcoin users (unicast | multicast | broadcast).
 The protocol is used to establish a connection via Bitcoin. Further data exchange can then be made via Bitcoin or P2P.
 
+## Usecases
+* Exchange connection information via bitcoin to establish a P2P connection (VoIP Calls, sharing Files, etc.)
+* encapsulate other protocols into MSGP (Chat, Filesharing, etc.)
+
 ## Protocol
 `6d736770` `<type>` `<channel-id>` `<data>`
 
@@ -84,10 +88,6 @@ There are two ways of writing into bitcoin, using `OP_RETURN` or `OP_PUSHDATA`
 
 ## Read from Bitcoin
 You can receive & read messages by filtering the blockchain for MSGP transactions or subscribe to a filter service.
-
-## Usecases
-* Exchange connection information via bitcoin to establish a P2P connection (VoIP Calls, sharing Files, etc.)
-* encapsulate other protocols into MSGP (Chat, Filesharing, etc.)
 
 ## Filterservice
 **MSGP Transaction by TxId**
