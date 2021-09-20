@@ -94,7 +94,7 @@ You can receive & read messages by filtering the blockchain for MSGP transaction
 
 `https://bitmsg.de/v1/msgp/tx/<txid>`
 
-Example: https://bitmsg.de/v1/msgp/tx/a88b313e8a72dafb8bc528cb6c8936511e39fff34849b75a3b3e64cd8443bf10
+Example: https://bitmsg.de/v1/msgp/tx/dec9419d8242dc66bfad09e0276a89e616571cb37723aa5124d7324962dba9c1
 
 **Confirmed MSGP Transactions**
 
