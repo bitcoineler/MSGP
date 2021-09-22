@@ -32,7 +32,7 @@ Prefix (4Bytes): `0x6d736770`  (ASCII:'MSGP')
 A 32Byte Channel identifier e.g SHA256-Hash(pubkey) or a broadcast address
 
 ### Data
-further protocol data + encapsulated protocols. Encrypted or unencrypted (message types)
+further protocol data + encapsulated protocols. Encrypted using (bsv.Ecies.electrumEncrypt) or unencrypted (see message types)
 
 `<senderPubkey>` `<sigHashFlag>` `<senderSig>` `<sequenceNumber>` `<encapsulatedProtocolData>`
 
