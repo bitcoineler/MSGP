@@ -82,7 +82,7 @@ async function generateTx(channelId,senderKeyPair,receiverPubkey,payload,sigHash
   console.log("\nENC:",encDataBuf.toString('hex'),encDataBuf.length);
   console.log("DEC:",decDataBuf.toString('hex'),decDataBuf.length);
 
-  const protodata = [PROTOCOL_PREFIX,PROTOCOL_TYPE,channelId,dataBuf.toString('hex')].join('')
+  const protodata = [PROTOCOL_PREFIX,PROTOCOL_TYPE,channelId,encDataBuf.toString('hex')].join('')
 
   // Add output to address
   let amount
