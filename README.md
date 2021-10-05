@@ -92,24 +92,24 @@ You can receive & read messages by filtering the blockchain for MSGP transaction
 ## Filterservice
 **MSGP Transaction by TxId**
 
-`https://bitmsg.de/v1/msgp/tx/<txid>`
+`https://gateway.codugh.com/api/MSGP-Bitcoin-Messaging-Protocol/tx/{txid}`
 
-Example: https://bitmsg.de/v1/msgp/tx/dec9419d8242dc66bfad09e0276a89e616571cb37723aa5124d7324962dba9c1
+Example: `https://gateway.codugh.com/api/MSGP-Bitcoin-Messaging-Protocol/tx/dec9419d8242dc66bfad09e0276a89e616571cb37723aa5124d7324962dba9c1
 
 **Confirmed MSGP Transactions**
 
-`https://bitmsg.de/v1/msgp/c/<channelId>`
+`https://gateway.codugh.com/api/MSGP-Bitcoin-Messaging-Protocol/c/<channelId>`
 
-Example: https://bitmsg.de/v1/msgp/c/e481259cdfa4ed647fdc446ffc8f848993543092bf46570fb984f56d7d1f4021
+Example: https://gateway.codugh.com/api/MSGP-Bitcoin-Messaging-Protocol/c/e481259cdfa4ed647fdc446ffc8f848993543092bf46570fb984f56d7d1f4021
 
 **Unconfirmed MSGP Transactions**
 
-`https://bitmsg.de/v1/msgp/u/<channelId>`
+`https://gateway.codugh.com/api/MSGP-Bitcoin-Messaging-Protocol/u/<channelId>`
 
-Example: https://bitmsg.de/v1/msgp/u/e481259cdfa4ed647fdc446ffc8f848993543092bf46570fb984f56d7d1f4021
+Example: https://gateway.codugh.com/api/MSGP-Bitcoin-Messaging-Protocol/u/e481259cdfa4ed647fdc446ffc8f848993543092bf46570fb984f56d7d1f4021
 
 **MSGP Transactions Eventstream**
 
-`https://bitmsg.de/v1/msgp/s/<channelId>`
+`https://gateway.codugh.com/api/MSGP-Bitcoin-Messaging-Protocol/s/<channelId>`
 
-Example: https://bitmsg.de/v1/msgp/s/a88b313e8a72dafb8bc528cb6c8936511e39fff34849b75a3b3e64cd8443bf10
+Example: https://gateway.codugh.com/api/MSGP-Bitcoin-Messaging-Protocol/s/a88b313e8a72dafb8bc528cb6c8936511e39fff34849b75a3b3e64cd8443bf10
