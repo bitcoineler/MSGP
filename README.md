@@ -1,5 +1,4 @@
-# MSGP
-Bitcoin Messaging Protocol
+# MSGP | Bitcoin Messaging Protocol
 
 ## Specification
 |     BRFC     |    title     | authors         | version |
