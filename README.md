@@ -98,18 +98,18 @@ Example: `https://gateway.codugh.com/api/MSGP-Bitcoin-Messaging-Protocol/tx/dec9
 
 **Confirmed MSGP Transactions**
 
-`https://gateway.codugh.com/api/MSGP-Bitcoin-Messaging-Protocol/c/<channelId>`
+`https://gateway.codugh.com/api/MSGP-Bitcoin-Messaging-Protocol/c/{channelId}`
 
 Example: https://gateway.codugh.com/api/MSGP-Bitcoin-Messaging-Protocol/c/e481259cdfa4ed647fdc446ffc8f848993543092bf46570fb984f56d7d1f4021
 
 **Unconfirmed MSGP Transactions**
 
-`https://gateway.codugh.com/api/MSGP-Bitcoin-Messaging-Protocol/u/<channelId>`
+`https://gateway.codugh.com/api/MSGP-Bitcoin-Messaging-Protocol/u/{channelId}`
 
 Example: https://gateway.codugh.com/api/MSGP-Bitcoin-Messaging-Protocol/u/e481259cdfa4ed647fdc446ffc8f848993543092bf46570fb984f56d7d1f4021
 
 **MSGP Transactions Eventstream**
 
-`https://gateway.codugh.com/api/MSGP-Bitcoin-Messaging-Protocol/s/<channelId>`
+`https://gateway.codugh.com/api/MSGP-Bitcoin-Messaging-Protocol/s/{channelId}`
 
 Example: https://gateway.codugh.com/api/MSGP-Bitcoin-Messaging-Protocol/s/a88b313e8a72dafb8bc528cb6c8936511e39fff34849b75a3b3e64cd8443bf10
